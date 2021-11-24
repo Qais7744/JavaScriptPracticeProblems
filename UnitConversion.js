@@ -1,4 +1,4 @@
-// Converting inches into ft
+// Converting inches into feet
 let c = 20;
 let a = 35; 
 let b = a / c ;
