@@ -1,15 +1,15 @@
-//Enter 3 Numbers do following arithmetic operation and find the one that is maximum and minimum.
+//Enter 3 Numbers do following arithmetic operation and find the one that is Maximum and Minimum.
 
 {
     const readline = require("readline");
-    const rl = readline.createInterface({
+    const read = readline.createInterface({
         input: process.stdin,
         output: process.stdout
     });
 
-    rl.question("Enter The First Number ", function (a) {
-        rl.question("Enter The Second Number ", function (b) {
-            rl.question("Enter The Third Number ", function (c) {
+    read.question("Enter The First Number ", function (a) {
+        read.question("Enter The Second Number ", function (b) {
+            read.question("Enter The Third Number ", function (c) {
                 let ArithmaticOperationOne = a + b * c;
                 let ArithmaticOperationTwo = c + a / b;
                 let ArithmaticOperationThree = a % b + c;
@@ -25,7 +25,7 @@
                 } else {
                     console.log("The Number Three is greater " + c);
                 }
-                rl.close();
+                read.close();
             });
         });
     });
